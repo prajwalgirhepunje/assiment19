@@ -9,53 +9,75 @@
             background-color: #f5f7fb;
         }
         .card{
-            width: 200px;
-            height: 100px;
+            width: 400px;
             background-color: #fff;
             box-shadow: 0 0 5px 1px ;
             border-radius: 5px;
-            padding: 7px;
+            padding: 5px;
+            margin-top: 20px;
         }
         .card-img{
-            height: 30px;
-            padding: 3px;
+            height: 40px;
+            padding: 5px;
             box-shadow: 0 0 5px 1px;
             border-radius: 5px;
         }
         .card-heading{
-            font-size: 14px;
+            font-size: 23px;
             margin-left:5px ;
         }
         .card-headar-section{
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-top: 10px;
         }
         .card-description{
-            font-size: 10px;
-            padding: 0 20px;
+            font-size: 14px;
+            padding: 10px 20px;
+            margin: 0;
         }
         .card-container{
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
         }
-          /* small devices */
-          @media screen and {max-width: 600px;}{
+     /* small devices*/
+     @media screen and (max-width : 600px){
 
-}
-/* normal devices */
-@media  screen and {min-width: 601px;} and {max-width: 768px;}{
+     }
+     /* normal devices */
+     @media screen and (min-width: 601px) and (max-width: 768px){
 
-}
-      /* tablet devices */
-@media  screen and {min-width: 769px;} and {max-width: 992px;}{
-
-}
-  /* large devices */
-  @media  screen and {min-width: 993px;} and {max-width: 1200px;}{
-
-  }
-
+     }
+     /* tablet devices */
+     @media screen and (min-width: 769px) and (max-width: 992px){
+        .card-container{
+            justify-content: start;
+        }.card-heading{
+            font-size: 20px;
+        }
+        .card-img{
+            height: 40px;
+        }
+        .card{
+            margin-left: 100px;
+            margin-top: 50px;
+            width: 300px;
+        }
+     }
+     
+     /* large devices */
+     @media screen and (min-width: 993px) and (max-width: 1250px){
+        .card-container{
+            justify-content: start;
+        }
+        .card{
+            margin-left: 120px;
+            margin-top: 50px;
+            width: 350px;
+        }
+     }
     </style>
 </head>
 <body>
